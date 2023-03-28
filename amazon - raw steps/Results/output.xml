@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230218 23:11:08.522" rpa="false" schemaversion="3">
+<suite id="s1" name="Amazon" source="C:\MAKS\Robot\amazon - raw steps\tests\amazon.robot">
+<test id="s1-t1" name="User can search for products" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230218 23:11:09.748" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20230218 23:11:09.748" endtime="20230218 23:11:16.745"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Your Amazon.com</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230218 23:11:22.472" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230218 23:11:22.472" level="FAIL">Text 'Your Amazon.com' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230218 23:11:16.749" endtime="20230218 23:11:22.527"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:22.527" endtime="20230218 23:11:22.527"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:22.536" endtime="20230218 23:11:22.536"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:22.536" endtime="20230218 23:11:22.536"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:22.536" endtime="20230218 23:11:22.536"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230218 23:11:09.748" endtime="20230218 23:11:22.536">Text 'Your Amazon.com' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="User can view a product" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230218 23:11:22.544" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20230218 23:11:22.536" endtime="20230218 23:11:40.232"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Your Amazon.com</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230218 23:11:46.197" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230218 23:11:46.197" level="FAIL">Text 'Your Amazon.com' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20230218 23:11:40.232" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>css=#result_0 a.s-access-detail-page</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to search results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230218 23:11:46.203" endtime="20230218 23:11:46.203"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230218 23:11:22.536" endtime="20230218 23:11:46.203">Text 'Your Amazon.com' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t3" name="User can add product to cart" line="31">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230218 23:11:46.203" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20230218 23:11:46.203" endtime="20230218 23:12:06.139"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Your Amazon.com</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230218 23:12:06.158" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+<msg timestamp="20230218 23:12:06.165" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+<status status="FAIL" starttime="20230218 23:12:06.141" endtime="20230218 23:12:06.198"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.200" endtime="20230218 23:12:06.200"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.204" endtime="20230218 23:12:06.204"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.204" endtime="20230218 23:12:06.204"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>css=#result_0 a.s-access-detail-page</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.205" endtime="20230218 23:12:06.205"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to search results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.207" endtime="20230218 23:12:06.207"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.207" endtime="20230218 23:12:06.207"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>1 item added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.208" endtime="20230218 23:12:06.208"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:06.212" endtime="20230218 23:12:06.212"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230218 23:11:46.203" endtime="20230218 23:12:06.213">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</status>
+</test>
+<test id="s1-t4" name="User must sign in to check out" line="45">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230218 23:12:06.234" level="INFO">Opening browser 'chrome' to base url 'http://www.amazon.com'.</msg>
+<status status="PASS" starttime="20230218 23:12:06.233" endtime="20230218 23:12:25.117"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Your Amazon.com</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20230218 23:12:25.140" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+<msg timestamp="20230218 23:12:25.146" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+<status status="FAIL" starttime="20230218 23:12:25.119" endtime="20230218 23:12:25.150"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.154" endtime="20230218 23:12:25.154"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search"]/form/div[2]/div/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.159" endtime="20230218 23:12:25.159"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.160" endtime="20230218 23:12:25.160"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>css=#result_0 a.s-access-detail-page</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.160" endtime="20230218 23:12:25.161"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Back to search results</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.161" endtime="20230218 23:12:25.161"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.162" endtime="20230218 23:12:25.162"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>1 item added to Cart</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.163" endtime="20230218 23:12:25.163"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Proceed to Checkout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.164" endtime="20230218 23:12:25.164"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>ap_signin1a_pagelet_title</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.166" endtime="20230218 23:12:25.167"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>ap_signin1a_pagelet_title</arg>
+<arg>Sign In</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.167" endtime="20230218 23:12:25.167"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20230218 23:12:25.167" endtime="20230218 23:12:25.167"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20230218 23:12:06.232" endtime="20230218 23:12:25.168">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20230218 23:11:08.540" endtime="20230218 23:12:25.173"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="4" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230218 23:12:06.158" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+<msg timestamp="20230218 23:12:25.140" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.100)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x012237D3]
+	(No symbol) [0x011B8B81]
+	(No symbol) [0x010BB36D]
+	(No symbol) [0x0109E5DA]
+	(No symbol) [0x0110F0CB]
+	(No symbol) [0x01120A56]
+	(No symbol) [0x0110B216]
+	(No symbol) [0x010E0D97]
+	(No symbol) [0x010E253D]
+	GetHandleVerifier [0x0149ABF2+2510930]
+	GetHandleVerifier [0x014C8EC1+2700065]
+	GetHandleVerifier [0x014CC86C+2714828]
+	GetHandleVerifier [0x012D3480+645344]
+	(No symbol) [0x011C0FD2]
+	(No symbol) [0x011C6C68]
+	(No symbol) [0x011C6D4B]
+	(No symbol) [0x011D0D6B]
+	BaseThreadInitThunk [0x76536BD9+25]
+	RtlGetFullPathName_UEx [0x77078FD2+1218]
+	RtlGetFullPathName_UEx [0x77078F9D+1165]
+</msg>
+</errors>
+</robot>

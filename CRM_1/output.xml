@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230213 23:08:54.785" rpa="false" schemaversion="3">
+<suite id="s1" name="Outlook" source="C:\MAKS\Robot\CRM_1\tests\outlook.robot">
+<test id="s1-t1" name="should be able to add new customer" line="10">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230213 23:08:56.090" endtime="20230213 23:08:56.092"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230213 23:08:56.093" endtime="20230213 23:08:56.093"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>starting the test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230213 23:08:56.094" level="INFO">starting the test case</msg>
+<status status="PASS" starttime="20230213 23:08:56.094" endtime="20230213 23:08:56.094"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://outlook.live.com/mail/0/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230213 23:08:56.095" level="INFO">Opening browser 'chrome' to base url 'https://outlook.live.com/mail/0/'.</msg>
+<status status="PASS" starttime="20230213 23:08:56.094" endtime="20230213 23:09:10.184"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230213 23:09:13.186" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230213 23:09:10.186" endtime="20230213 23:09:13.186"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230213 23:09:13.187" endtime="20230213 23:09:15.607"/>
+</kw>
+<doc>basic info about test</doc>
+<tag>1006</tag>
+<tag>Contacts</tag>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20230213 23:08:56.089" endtime="20230213 23:09:15.609"/>
+</test>
+<doc>some info</doc>
+<status status="PASS" starttime="20230213 23:08:54.792" endtime="20230213 23:09:15.612"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">Contacts</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Outlook">Outlook</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,179 @@
+[
+    {
+        "hec_contract_start_date": "2024-01-01",
+        "hec_contract_end_date": "2024-12-31",
+        "hec_ls_opportunity_id": "JSONOPPORTID",
+        "hec_businesspartner": "0010375642",
+        "hec_ls_contract_curr": "EUR",
+        "hec_apm_guid": "XCBQG3PXBEPN3JEAQTUDEVFWVQ",
+        "hec_landscape_descr": "Ladnscape desc from JSON",
+        "hec_conf_descr": "conf descr from JSON",
+        "hec_conf_version_descr": "version description from JSON",
+        "hec_material": "000000000008008462",
+        "hec_fm_dr_operation_guid": "AAGTVLUDIQPOXN5PWK3G6FDKHI",
+        "hec_landscape_config_status": "01",
+        "delivery_unit": {
+            "hec_delivery_unit_guid": "AAGTVLUDIQPNVMOWTYDIXTKZ6U",
+            "hec_inf_provider_guid": "AAGTVLUDIQPNVMOWWTASO7S2CM",
+            "data_center": [
+                {
+                    "hec_datacenter_guid": "AAGTVLUDIQPNVN5NMBSQEOBXSU",
+                    "hec_sec_datacenter_guid": "AAGTVLUDIQPNVN5NMBSQEOBXSU",
+                    "hec_datacenter_connectivity": [
+                        {
+                            "hec_connectivity_guid": "AAGTVLUDIQPNVN7VX4CYXPUBQU"
+                        }
+                    ],
+                    "network_segmenets": [
+                        {
+                            "hec_network_type_value": "02",
+                            "hec_network_mask": "27",
+                            "HEC_NW_CUSTOMER_DOMAIN": "sap.com",
+                            "HEC_NW_IP_START_ADRESS": "192.168.178.1"
+                        }
+                    ]
+                }
+            ]
+        },
+        "solutions": [
+            {
+                "HEC_SOLUTION_GUID": "AAGTVLUDIQPNXEFD2QQ2ZK6WPA",
+
+                "HEC_SOL_STACK_VALUE": "01",
+                "HEC_SOL_DB_SRV_REQUIRED": "X",
+                "HEC_SOL_IMPL_TYPE_VALUE": "1",
+                "HEC_SOL_IMPL_TYPE_DESCR": "Greenfield",
+                "HEC_SOL_IMPL_TYPE_VLQT": "02",
+                "HEC_SOL_APP_SRV_REQUIRED": "X",
+                "HEC_INITIAL_SUPPORT_STAT_VALUE": "02",
+                "HEC_INITIAL_SUPPORT_STAT_DESCR": "Default",
+                "HEC_SUPPORT_STAT_VALUE": "02",
+                "HEC_SUPPORT_STAT_DESCR": "Default",
+                "HEC_CALC_SETUP_DR": "X",
+                "tiers": [
+                    {
+                        "HEC_TIER_CAT_VALUE": "02",
+                        "HEC_TIER_CAT_DESCR": "Production",
+                        "HEC_TIER_TYPE_DESCR": "Production",
+                        "HEC_TIER_IMPL_TYPE_VALUE": "1",
+                        "HEC_TIER_IMPL_TYPE_DESCR": "Greenfield",
+                        "HEC_TIER_TYPE_VLQT": "01",
+                        "HEC_TIER_TYPE_VALUE": "05",
+                        "HEC_TIER_IMPL_TYPE_VLQT": "02",
+                        "HEC_TIER_DESCR": "PROD",
+
+                        "APP_SERVER_INSTANCE": [
+                            {
+                                "APP_NODE": [
+                                    {
+                                        "HEC_APP_SRV_PERF_CAT_QTY": 1,
+                                        "APP_SERVER_PERFORM_CAT": [
+                                            {
+                                                "HEC_SRV_PERF_CAT_GUID": "AAGTVLUDIQPNXBPQDBHSEQA3FE",
+                                                "HEC_SRV_PERF_CAT_DESCR": "App Server,, RAM Class : 256 GiB, CPU Class : L",
+                                                "APP_STORAGE_AMOUNT":[
+                                                    {
+                                                        "HEC_ASQ_MAIN_STOR_QTY_VIRTUAL": 100,
+                                                        "HEC_ASQ_ADDITIONAL_STOR_QTY" : 100
+                                                    }       
+                                                 ],
+                                                "APP_SERVER": [
+                                                    {
+                                                        "HEC_IP_SERVER_GUID" : "AAGTVLUDIQPOVOETZ6NOOTLOCM",
+                                                        "HEC_IP_SERVER_DESCR": "Virtual-256GiB-r5.8xlarge",
+                                                        "HEC_SEC_DATACENTER_GUID": "AAGTVLUDIQPNVN5NMBSQEOBXSU",
+                                                        "APP_STORAGE": [
+                                                            {
+
+                                                               
+                                                                "HEC_IP_STORAGE_GUID" : "AAGTVLUDIQPNXJ5HLUNUVIEKSI" ,
+                                                                "HEC_STORAGE_DESCR": "AWS Disk Storage 1GB gp3 EBS",                                                
+                                                                "APP_STORAGE_BACKUP": [
+                                                                    {
+                                                                        "HEC_BACKUP_CLASS_GUID" : "AAGTVLUDIQPOVPHIROQ26GGX2Y",
+                                                                        "HEC_BACKUP_CLASS_DESCR": "Backup-1GB-FS-Mly-full+Dly-incr-2M",
+                                                                        "HEC_BACKUP_SIZE": 220
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "DB_SERVER_INSTANCE": [
+                            {
+                                "INSTANCE_DB": [
+                                    {
+                                      
+                                        "HEC_DBST_NODETY_CLUST_TY_GUID": "AAGTVLUDIQPNXDH7G2ISZFC3GA",
+                                        "DB_NODE": [
+                                            {
+                                                "HEC_DB_SRV_PERF_CAT_QTY": 1,
+                                                "DB_SERVER_PERFORM_CAT": [
+                                                    {
+                                                        "HEC_SRV_PERF_CAT_GUID": "AAGTVLUDIQPNXMG66ELMTCAXMM",
+                                                        "DB_STORAGE_AMOUNT":[
+                                                            {
+                                                               
+                                                                "HEC_DSQ_MAIN_STOR_QTY_VIRTUAL": 110,
+                                                                "HEC_DSQ_ADDITIONAL_STOR_QTY" : 100
+                                                                
+                                                            }    
+                                                        ],
+                                                     
+                                                        "DB_SERVER": [
+                                                            {
+                                                                "HEC_IP_SERVER_GUID": "AAGTVLUDIQPOVOER6GM73A6LH4",
+                                                                "HEC_IP_SERVER_DESCR" : "HANA-Virtual-244GiB-r4.8xlarge",
+                                                                "HEC_SEC_DATACENTER_GUID": "AAGTVLUDIQPNVN5NMBSQEOBXSU",
+                                                                "DB_STORAGE": [
+                                                                    {
+                                                                        "HEC_IP_STORAGE_GUID": "AAGTVLUDIQPNXJ5HLUNUVIEKSI",
+                                                                        "HEC_STORAGE_DESCR" : "AWS Disk Storage 1GB gp3 EBS",
+                                                                        "HEC_SEC_DATACENTER_GUID": "AAGTVLUDIQPNVN5NMBSQEOBXSU",
+                                                                        "DB_STORAGE_BACKUP": [
+                                                                            {
+                                                                                "HEC_BACKUP_CLASS_GUID": "AAGTVLUDIQPOVPG4RTA2OBCFWA",
+                                                                                "HEC_SEC_DATACENTER_GUID": "AAGTVLUDIQPNVN5NMBSQEOBXSU"
+                                                                                
+                                                                               
+                                                                                
+                                                                                
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "HEC_DB_NODE_TYPE_DESCR": "DB Tenant",
+                                        "DB_NODE": [
+                                            {
+                                                "HEC_DB_SRV_PERF_CAT_QTY": "1",
+												"DB_SERVER_PERFORM_CAT" : [
+												{
+													"HEC_SRV_PERF_CAT_GUID": "AAGTVLUDIQPNXMG66ELMTCAXMM"
+												}
+												]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

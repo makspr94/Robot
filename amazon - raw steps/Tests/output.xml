@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230218 23:14:13.067" rpa="false" schemaversion="3">
+<suite id="s1" name="Variables" source="C:\MAKS\Robot\amazon - raw steps\Tests\variables.robot">
+<test id="s1-t1" name="Create and log variable" line="8">
+<kw name="Set Variable" library="BuiltIn">
+<var>${variable}</var>
+<arg>Value 1</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230218 23:14:13.107" level="INFO">${variable} = Value 1</msg>
+<status status="PASS" starttime="20230218 23:14:13.107" endtime="20230218 23:14:13.107"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Variable}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230218 23:14:13.123" level="INFO">Value 1</msg>
+<status status="PASS" starttime="20230218 23:14:13.123" endtime="20230218 23:14:13.123"/>
+</kw>
+<status status="PASS" starttime="20230218 23:14:13.107" endtime="20230218 23:14:13.123"/>
+</test>
+<status status="PASS" starttime="20230218 23:14:13.067" endtime="20230218 23:14:13.123"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Variables">Variables</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
