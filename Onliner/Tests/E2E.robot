@@ -25,3 +25,4 @@ Open Catalogue/Smartphone page
       OnlinerApp.Open Catalogue page
       OnlinerAPP.Open "Smartphone" page
       OnlinerApp.Filter Apple 128 GB
+      OnlinerApp.Click second product

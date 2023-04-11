@@ -1,98 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.1 on win32)" generated="20230411 16:02:25.834" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.1 on win32)" generated="20230411 17:08:42.980" rpa="false" schemaversion="3">
 <suite id="s1" name="E2E" source="C:\MAKS\Robot\Onliner\Tests\E2E.robot">
 <test id="s1-t1" name="Open Catalogue/Smartphone page" line="22">
 <kw name="Begin Web" library="WebCommon" type="SETUP">
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20230411 16:02:25.987" endtime="20230411 16:02:25.987"/>
+<status status="PASS" starttime="20230411 17:08:43.149" endtime="20230411 17:08:43.149"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230411 16:02:25.988" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230411 16:02:25.987" endtime="20230411 16:02:27.012"/>
+<msg timestamp="20230411 17:08:43.149" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230411 17:08:43.149" endtime="20230411 17:08:44.260"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230411 16:02:27.012" endtime="20230411 16:02:27.125"/>
+<status status="PASS" starttime="20230411 17:08:44.260" endtime="20230411 17:08:44.388"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:25.987" endtime="20230411 16:02:27.125"/>
+<status status="PASS" starttime="20230411 17:08:43.148" endtime="20230411 17:08:44.388"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230411 16:02:27.126" endtime="20230411 16:02:27.126"/>
+<status status="PASS" starttime="20230411 17:08:44.388" endtime="20230411 17:08:44.388"/>
 </kw>
 <kw name="Open main page" library="OnlinerAPP">
 <kw name="Open main page" library="MainPage">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL_MAIN}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230411 16:02:27.126" level="INFO">Opening url 'https://www.onliner.by/'</msg>
-<status status="PASS" starttime="20230411 16:02:27.126" endtime="20230411 16:02:50.311"/>
+<msg timestamp="20230411 17:08:44.389" level="INFO">Opening url 'https://www.onliner.by/'</msg>
+<status status="PASS" starttime="20230411 17:08:44.389" endtime="20230411 17:09:07.832"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:27.126" endtime="20230411 16:02:50.311"/>
+<status status="PASS" starttime="20230411 17:08:44.389" endtime="20230411 17:09:07.833"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:27.126" endtime="20230411 16:02:50.312"/>
+<status status="PASS" starttime="20230411 17:08:44.389" endtime="20230411 17:09:07.833"/>
 </kw>
 <kw name="Open Catalogue page" library="OnlinerAPP">
 <kw name="click &quot;Catalogue&quot; button" library="TopNav">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${TOPNAV_CATALOGUE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230411 16:02:50.315" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div/header/div[2]/div/nav/ul[1]/li[1]/a[2]'.</msg>
-<status status="PASS" starttime="20230411 16:02:50.314" endtime="20230411 16:03:14.343"/>
+<msg timestamp="20230411 17:09:07.836" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div/header/div[2]/div/nav/ul[1]/li[1]/a[2]'.</msg>
+<status status="PASS" starttime="20230411 17:09:07.835" endtime="20230411 17:09:31.794"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:50.313" endtime="20230411 16:03:14.343"/>
+<status status="PASS" starttime="20230411 17:09:07.835" endtime="20230411 17:09:31.794"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:50.313" endtime="20230411 16:03:14.343"/>
+<status status="PASS" starttime="20230411 17:09:07.834" endtime="20230411 17:09:31.794"/>
 </kw>
 <kw name="open &quot;Smartphone&quot; page" library="OnlinerAPP">
 <kw name="open &quot;Smartphone&quot; page" library="Catalogue">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CAT_ITEM_1_Electronics}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230411 16:03:14.346" level="INFO">Clicking element 'Xpath=//li[@data-id="1"]'.</msg>
-<status status="PASS" starttime="20230411 16:03:14.345" endtime="20230411 16:03:16.460"/>
+<msg timestamp="20230411 17:09:31.797" level="INFO">Clicking element 'Xpath=//li[@data-id="1"]'.</msg>
+<status status="PASS" starttime="20230411 17:09:31.796" endtime="20230411 17:09:33.907"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${CAT_item1_subitem1_phonesAndAccessories}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20230411 16:03:16.461" level="INFO">Simulating Mouse Over on element 'Xpath=//div[contains(text(),'Мобильные телефоны')]'.</msg>
-<status status="PASS" starttime="20230411 16:03:16.460" endtime="20230411 16:03:18.757"/>
+<msg timestamp="20230411 17:09:33.907" level="INFO">Simulating Mouse Over on element 'Xpath=//div[contains(text(),'Мобильные телефоны')]'.</msg>
+<status status="PASS" starttime="20230411 17:09:33.907" endtime="20230411 17:09:36.242"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CAT_item1_subitem1.1_phones}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230411 16:03:18.757" level="INFO">Clicking element 'Xpath=//*[@id="container"]/div/div/div/div/div[1]/div[4]/div/div[2]/div[1]/div/div[1]/div[2]/div/a[1]'.</msg>
-<status status="PASS" starttime="20230411 16:03:18.757" endtime="20230411 16:03:42.557"/>
+<msg timestamp="20230411 17:09:36.243" level="INFO">Clicking element 'Xpath=//*[@id="container"]/div/div/div/div/div[1]/div[4]/div/div[2]/div[1]/div/div[1]/div[2]/div/a[1]'.</msg>
+<status status="PASS" starttime="20230411 17:09:36.242" endtime="20230411 17:09:59.889"/>
 </kw>
-<status status="PASS" starttime="20230411 16:03:14.345" endtime="20230411 16:03:42.557"/>
+<status status="PASS" starttime="20230411 17:09:31.796" endtime="20230411 17:09:59.889"/>
 </kw>
-<status status="PASS" starttime="20230411 16:03:14.345" endtime="20230411 16:03:42.557"/>
+<status status="PASS" starttime="20230411 17:09:31.795" endtime="20230411 17:09:59.889"/>
+</kw>
+<kw name="Filter Apple 128 GB" library="OnlinerAPP">
+<kw name="smartphone_cat.filter_Apple_128_gb">
+<msg timestamp="20230411 17:09:59.894" level="FAIL">No keyword with name 'smartphone_cat.filter_Apple_128_gb' found.</msg>
+<status status="FAIL" starttime="20230411 17:09:59.894" endtime="20230411 17:09:59.894"/>
+</kw>
+<status status="FAIL" starttime="20230411 17:09:59.890" endtime="20230411 17:09:59.895"/>
+</kw>
+<kw name="Click second product" library="OnlinerAPP">
+<status status="NOT RUN" starttime="20230411 17:09:59.896" endtime="20230411 17:09:59.896"/>
 </kw>
 <kw name="End Web" library="WebCommon" type="TEARDOWN">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230411 16:03:42.558" endtime="20230411 16:03:45.726"/>
+<status status="PASS" starttime="20230411 17:09:59.897" endtime="20230411 17:10:02.974"/>
 </kw>
-<status status="PASS" starttime="20230411 16:03:42.558" endtime="20230411 16:03:45.726"/>
+<status status="PASS" starttime="20230411 17:09:59.896" endtime="20230411 17:10:02.975"/>
 </kw>
-<status status="PASS" starttime="20230411 16:02:25.986" endtime="20230411 16:03:45.727"/>
+<status status="FAIL" starttime="20230411 17:08:43.147" endtime="20230411 17:10:02.976">No keyword with name 'smartphone_cat.filter_Apple_128_gb' found.</status>
 </test>
-<status status="PASS" starttime="20230411 16:02:25.835" endtime="20230411 16:03:45.728"/>
+<status status="FAIL" starttime="20230411 17:08:42.981" endtime="20230411 17:10:02.978"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="E2E">E2E</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="E2E">E2E</stat>
 </suite>
 </statistics>
 <errors>

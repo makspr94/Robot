@@ -24,4 +24,7 @@ open "Smartphone" page
     Catalogue.open "Smartphone" page
 
 Filter Apple 128 GB
-    Smartphone_filter.Apple_128_gb
+    smartphone_cat.filter_Apple_128_gb
+
+Click second product
+    smartphone_cat.Click second product
