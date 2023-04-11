@@ -18,7 +18,10 @@ Open main page
 
 Open Catalogue page
     TopNav. click "Catalogue" button
-    Catalogue. verify page loaded
+
 
 open "Smartphone" page
     Catalogue.open "Smartphone" page
+
+Filter Apple 128 GB
+    Smartphone_filter.Apple_128_gb
